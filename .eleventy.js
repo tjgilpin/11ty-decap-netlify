@@ -1,7 +1,5 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -16,9 +14,6 @@ module.exports = function (eleventyConfig) {
       "dd LLL yyyy"
     );
   });
-
-  // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
@@ -36,21 +31,6 @@ module.exports = function (eleventyConfig) {
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
-
-  // Minify HTML
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      });
-      return minified;
-    }
-
-    return content;
-  });
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
