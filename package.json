@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "npm-run-all --parallel css eleventy browsersync",
+    "start": "npm-run-all --parallel eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
     "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production",
