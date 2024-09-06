@@ -20,9 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   // Copy Static Files to /_Site
-  eleventyConfig.addPassthroughCopy({
-    "./src/admin/config.yml": "./admin/config.yml";
-  });
+  eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
