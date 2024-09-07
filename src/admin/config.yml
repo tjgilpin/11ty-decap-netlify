@@ -14,10 +14,11 @@ local_backend: true
 collections:
   - label: "Pages"
     name: "pages"
+    folder: "src/posts"
+    create: true    
     files:
     - label: "About"
       name: "about"
-      file: "src/pages/about.md"
       editor:
         preview: false
       fields:
