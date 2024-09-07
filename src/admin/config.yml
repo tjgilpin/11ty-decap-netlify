@@ -19,6 +19,7 @@ collections:
     files:
     - label: "About"
       name: "about"
+      file: "src/pages/about.md"
       editor:
         preview: false
       fields:
