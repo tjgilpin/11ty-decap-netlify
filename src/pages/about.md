@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Page
 description: Merci beaucoup
 author: Timbob
 date: 2024-07-01
