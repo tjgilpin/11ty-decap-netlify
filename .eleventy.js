@@ -1,7 +1,10 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 

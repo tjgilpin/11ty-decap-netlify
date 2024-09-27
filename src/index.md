@@ -2,7 +2,9 @@
 layout: layout.njk
 title: Neat Starter
 path: home
+eleventyNavigation:
 ---
+{{ title }}
 
 # This is a Heading h1
 

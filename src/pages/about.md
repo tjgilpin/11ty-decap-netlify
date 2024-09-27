@@ -3,6 +3,8 @@ title: About Page
 description: Merci beaucoup
 author: Timbob
 date: 2024-07-01
+eleventyNavigation:
+  key: About
 ---
 # This is a Heading h1
 
