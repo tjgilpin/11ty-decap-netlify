@@ -9,7 +9,7 @@ Bare bones starter Template for Eleventy and ~~Netlify CMS~~ Decap CMS using Net
 - [Netlify](https://www.netlify.com)
 
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/tjgilpin/11ty-netlify&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/tjgilpin/11ty-decap-netlify&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
 ## Getting Started
 
