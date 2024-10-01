@@ -1,5 +1,5 @@
 module.exports = {
 	permalink: function ({ title }) {
-		return `/${this.slugify(title)}`;
+		return `/${this.slugify(title)}/index.html`;
 	},
 };
