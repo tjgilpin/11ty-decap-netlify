@@ -1,8 +1,8 @@
 ---
-title: About Page
+title: About
 author: Timbob
-order: 1000
 eleventyExcludeFromCollections: false
+order: 1000
 ---
 
 
