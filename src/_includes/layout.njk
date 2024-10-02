@@ -13,6 +13,13 @@ title: Chateau
   <body>
     <header>
       Header 
+      <nav>
+        <ul>
+          {% for item in collections.all | eleventyNavigation %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
     </header>
     <main>
       {{ content | safe }}

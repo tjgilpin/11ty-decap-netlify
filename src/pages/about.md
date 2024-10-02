@@ -2,7 +2,13 @@
 title: About Page
 description: Merci beaucoup
 author: Timbob
+show_in_navigation: true
+order: 2
 date: 2024-07-01
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ title }}"
+    order: "{{ order }}"
 ---
 # This is a Heading h1
 
