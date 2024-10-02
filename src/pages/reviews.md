@@ -1,5 +1,4 @@
 ---
-layout: layout.njk
 author: Timbob
 order: 2
 title: Reviews

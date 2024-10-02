@@ -7,5 +7,6 @@ module.exports = {
       key: data => data.title,
       order: data => data.order
     }
-  },  
+  }, 
+  layout: "layout.njk", 
 };
