@@ -32,10 +32,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addNunjucksFilter("showIfTrue", function(value, fallback) {
-    return value ? fallback : false;
-  });
-
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
