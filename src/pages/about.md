@@ -4,11 +4,6 @@ author: Timbob
 eleventyExcludeFromCollections: false
 order: 1000
 ---
-
-
-
-show in nav: {{ show_in_navigation }}
-
 # This is a Heading h1
 
 ## This is a Heading h2
