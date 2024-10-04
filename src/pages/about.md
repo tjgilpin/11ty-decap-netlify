@@ -18,6 +18,8 @@ order: 1000
 **This text will be bold**\
 **This will also be bold**
 
+![Chateau](/static/img/496404201.jpg "Chateau")
+
 *You **can** combine them*
 
 ## Lists
