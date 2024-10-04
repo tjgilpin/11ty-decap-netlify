@@ -1,6 +1,7 @@
 ---
-order: 3000
 title: Rates
+author: timbob
 eleventyExcludeFromCollections: false
+order: 3000
 ---
-Rate details and CTA through to Booking.com?
+Rates copy

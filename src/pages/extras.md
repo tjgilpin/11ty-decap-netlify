@@ -1,8 +1,7 @@
 ---
 title: Extras
 author: Timbob
+eleventyExcludeFromCollections: false
 order: 2
-eleventyExcludeFromCollections: true
 ---
-
-Babysitting, blah blah, blah
+Extras copy
