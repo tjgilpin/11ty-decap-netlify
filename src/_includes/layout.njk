@@ -18,14 +18,26 @@ title: Chateau
           {% for item in collections.all | eleventyNavigation %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
           {% endfor %}
+          {% if not settings.blognav %}
+            <li><a href="/blog/">Blog</a></li>
+          {% endif %}          
         </ul>
       </nav>
     </header>
     <main>
       {{ content | safe }}
     </main>
-    <footer>
-      Footer
-    </footer>
+    {% if footerlinks.links %}
+      <footer>
+        <ul>
+          {% for item in footerlinks.links %}
+            <li>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              <p>{{ item.desc }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </footer>
+    {% endif %}
   </body>
 </html>
