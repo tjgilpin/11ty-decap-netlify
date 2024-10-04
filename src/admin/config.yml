@@ -1,7 +1,6 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  repo: tjgilpin/11ty-decap-netlify
   branch: master
   ### enable below lines for github integration ###
   # name: github
