@@ -1,10 +1,9 @@
----
-layout: layout.njk
----
+{% set postslist = collections.post %}
 
-<section>
-    {% set postslist = collections.post %}
+length: {{ postslist.length}}
 
+{% if postslist | length > 0 %}
+  <section>
     {% for post in postslist | reverse %}
         <article>
             <h2>
@@ -35,7 +34,7 @@ layout: layout.njk
                     Read more →
                 </a>
             </p>
-
-        </article>
-    {% endfor %}
-</section>
+          </article>
+      {% endfor %}
+  </section>
+{% endif %}

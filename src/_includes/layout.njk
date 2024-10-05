@@ -17,15 +17,15 @@ title: Chateau
         <ul>
           {% for item in collections.all | eleventyNavigation %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-          {% if not settings.blognav %}
-            <li><a href="/blog/">Blog</a></li>
-          {% endif %}          
+          {% endfor %}     
         </ul>
       </nav>
     </header>
     <main>
       {{ content | safe }}
+      {% if posts %}
+        {% include "posts.njk" %}
+      {% endif %}
     </main>
     {% if footerlinks.links %}
       <footer>
