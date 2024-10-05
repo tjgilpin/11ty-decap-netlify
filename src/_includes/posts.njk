@@ -1,7 +1,4 @@
 {% set postslist = collections.post %}
-
-length: {{ postslist.length}}
-
 {% if postslist | length > 0 %}
   <section>
     {% for post in postslist | reverse %}
