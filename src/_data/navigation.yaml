@@ -1,9 +1,0 @@
-items:
-  - text: Menu 123
-    url: menu123
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: /blog
