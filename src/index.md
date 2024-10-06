@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Neat Starter
+title: Home
 path: home
 ---
 
