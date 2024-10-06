@@ -31,8 +31,8 @@ header {
   align-items: center;
 }
 
-header svg {
-  max-height: 65px;
+header img {
+  max-height: clamp(40px, 12vw, 65px);
   padding: 0.25rem;
 }
 
