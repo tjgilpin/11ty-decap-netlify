@@ -1,2 +1,2 @@
-/#confirmation_token=*  /admin/#confirmation_token=*
+/#confirmation_token*  /admin/#confirmation_token:splat
 /abc  /info
