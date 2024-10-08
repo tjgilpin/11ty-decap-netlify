@@ -52,7 +52,7 @@ footer ul {
 }
 
 main {
-  max-width: 1600px;
+  max-width: 90ch;
   width: 100%;
   justify-self: center;
   padding: 1rem;
