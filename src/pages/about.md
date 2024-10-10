@@ -2,7 +2,7 @@
 title: About
 author: Timbob
 eleventyExcludeFromCollections: false
-order: 1000
+order: 10
 ---
 # This is a Heading h12222333
 

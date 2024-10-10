@@ -2,7 +2,7 @@
 title: Blog
 author: timbob
 eleventyExcludeFromCollections: false
-order: -100
+order: 50
 posts: true
 ---
 Blog content goes here

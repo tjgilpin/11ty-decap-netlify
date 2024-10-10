@@ -69,9 +69,10 @@ article h2 {
 }
 
 article .date-author {
-  margin-top: 0.35em;
   font-size: 0.85em;
-  font-weight: 500;
+  font-family: Monospace;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 footer {
@@ -92,4 +93,29 @@ img {
 
 footer ul li p {
   margin: 0 .025rem;
+}
+
+main a {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: aqua;
+  text-decoration-skip-ink: auto;
+  color: blue;
+}
+
+main a:hover {
+  text-underline-offset: 0;
+  text-decoration-thickness: 4px;
+  text-decoration-skip-ink: none;  
+}
+
+.date-author {
+  font-family: Monospace;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 0.5em;
+}
+
+h1, h2, h3 {
+  line-height: 1;
 }
