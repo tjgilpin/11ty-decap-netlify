@@ -2,6 +2,7 @@
 layout: layout.njk
 title: Home
 path: home
+script: redirect.js
 ---
 
 # This is a Heading h1

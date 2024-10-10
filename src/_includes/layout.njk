@@ -16,6 +16,9 @@
     <meta property="og:image:height" content="{{ settings.height }}">
     <meta property="og:image:alt" content="{{ settings.alt }}">
     <link rel="stylesheet" href="/static/css/style.css">
+    {% if script %}
+      <script defer src="/static/js/{{ script }}"></script>
+    {% endif %}
   </head>
   <body class="{{ title | slugify }}">
     <header>
