@@ -1,7 +1,7 @@
 ---
 title: Rates
 author: timbob
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 order: 3000
 ---
 Rates copy

@@ -1,7 +1,7 @@
 ---
+title: Reviews Test
 author: Timbob
-order: 2
-title: Reviews
 eleventyExcludeFromCollections: false
+order: 2
 ---
 5 star reviews go here
