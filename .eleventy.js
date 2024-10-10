@@ -34,12 +34,11 @@ module.exports = function (eleventyConfig) {
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-  // Copy Static Files to /_Site
+  // Copy admin assets to /_Site
   eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
 
-  // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/static/img");
-  eleventyConfig.addPassthroughCopy("./src/static/css");
+  // Copy static assets to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
