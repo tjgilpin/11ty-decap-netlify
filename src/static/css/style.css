@@ -32,8 +32,9 @@ header {
 }
 
 header img {
-  max-height: clamp(40px, 12vw, 65px);
+  max-height: 65px;
   padding: 0.25rem;
+  min-height: 40px; 
 }
 
 header ul, footer ul {
@@ -54,8 +55,23 @@ footer ul {
 main {
   max-width: 90ch;
   width: 100%;
-  justify-self: center;
   padding: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;  
+}
+
+article h2 {
+  margin-bottom: 0;
+}
+
+article .date-author {
+  margin-top: 0.35em;
+  font-size: 0.85em;
+  font-weight: 500;
 }
 
 footer {

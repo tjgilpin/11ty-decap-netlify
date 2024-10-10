@@ -17,7 +17,7 @@
     <meta property="og:image:alt" content="{{ settings.alt }}">
     <link rel="stylesheet" href="/static/css/style.css">
   </head>
-  <body>
+  <body class="{{ title | slugify }}">
     <header>
       <a href="/"><img src="{{ settings.logo }}" /></a>
       <nav>
@@ -29,6 +29,9 @@
       </nav>
     </header>
     <main>
+      <h1>
+        {{ title }}
+      </h1>
       {{ content | safe }}
       {% if posts %}
         {% include "posts.njk" %}

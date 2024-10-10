@@ -12,9 +12,23 @@ module.exports = function (eleventyConfig) {
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "dd LLLL yyyy"
     );
   });
+
+  // human readable date
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLLL yyyy"
+    );
+  });  
+
+  // human readable date
+  eleventyConfig.addFilter("readableISODate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LL yyyy"
+    );
+  });  
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
