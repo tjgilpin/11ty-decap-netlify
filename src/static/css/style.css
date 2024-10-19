@@ -20,6 +20,27 @@ body {
   font-family: "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+h1, article h2 a {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+h1 {
+  font-size: 2.85rem;
+  letter-spacing: 0.0125em;
+  font-style: italic;
+}
+
+article h2 a {
+  font-size: 2rem;
+}
+
+article p a:hover {
+  font-style: italic;
+  margin: 0.125em;
+  transition: all 0.2s ease-out;
+}
+
 header a {
   color: var(--light);
 }
@@ -55,7 +76,7 @@ footer ul {
 main {
   max-width: 90ch;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 section {

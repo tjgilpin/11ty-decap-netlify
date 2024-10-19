@@ -15,6 +15,9 @@
     <meta property="og:image:width" content="{{ settings.width }}">
     <meta property="og:image:height" content="{{ settings.height }}">
     <meta property="og:image:alt" content="{{ settings.alt }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
     {% if script %}
       <script defer src="/static/js/{{ script }}"></script>
@@ -23,7 +26,7 @@
   <body class="{{ title | slugify }}">
     <header>
       <a href="/"><img src="{{ settings.logo }}" /></a>
-      <nav>
+      <nav aria-label="Main">
         <ul>
           {% for item in collections.all | eleventyNavigation %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
@@ -32,9 +35,16 @@
       </nav>
     </header>
     <main>
-      <h1>
-        {{ title }}
-      </h1>
+      <nav aria-label="Breadcrumb">      
+        {% if tags and "post" in tags %}
+          <a href="">Back to posts</a>
+        {% endif %}
+      </nav>
+      {% if title  %}
+        <h1>
+          {{ title }}
+        </h1>
+      {% endif %}
       {{ content | safe }}
       {% if posts %}
         {% include "posts.njk" %}

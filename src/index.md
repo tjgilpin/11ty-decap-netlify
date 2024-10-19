@@ -1,7 +1,5 @@
 ---
 layout: layout.njk
-title: Home
-path: home
 script: redirect.js
 ---
 
