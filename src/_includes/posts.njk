@@ -1,36 +1,36 @@
 {% set postslist = collections.post %}
 {% if postslist | length > 0 %}
   <section>
-  {% for post in postslist | reverse %}
-    <article>
-      <h2>
-        <a href="{{ post.url | url }}">
-          {% if post.data.title %}
-            {{ post.data.title }}
-          {% else %}
-            Untitled
-          {% endif %}
-        </a>
-      </h2>
-      <p class="date-author">
-        <time datetime="{{ post.date | readableISODate | slugify }}">
-          {{ post.date | readableDate }}
-        </time>
-        by
-        <adress>{{ post.data.author }}</address>
-
-      </p>
-      {% if post.data.description %}
-        <p>
-          {{ post.data.description }}
-        </p>
-      {% endif %}
-
-      <p>
+    {% for post in postslist | reverse %}
+      <article>
+        <h2>
           <a href="{{ post.url | url }}">
-              Read more →
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% else %}
+              Untitled
+            {% endif %}
           </a>
-      </p>
+        </h2>
+        <p class="date-author">
+          <time datetime="{{ post.date | readableISODate | slugify }}">
+            {{ post.date | readableDate }}
+          </time>
+          by
+          <adress>{{ post.data.author }}</address>
+
+        </p>
+        {% if post.data.description %}
+          <p>
+            {{ post.data.description }}
+          </p>
+        {% endif %}
+
+        <p>
+            <a href="{{ post.url | url }}">
+                Read more →
+            </a>
+        </p>
       </article>
     {% endfor %}
   </section>

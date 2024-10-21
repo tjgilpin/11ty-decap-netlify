@@ -61,7 +61,9 @@ collections:
           - { label: "Image", name: "image", widget: "image", allow_multiple: false }
           - { label: "Image width", name: "width", widget: "number", default: 1200 }          
           - { label: "Image height", name: "height", widget: "number", default: 630 }          
-          - { label: "Image alt", name: "alt", widget: "string" }          
+          - { label: "Image alt", name: "alt", widget: "string" }  
+          - { label: "Posts URL", name: "posts", widget: "string" }
+          - { label: "Navigation Order", name: "postsorder", widget: "number" }
       - label: "Footer Links"
         name: "footerlinks"
         file: "src/_data/footerlinks.yaml"

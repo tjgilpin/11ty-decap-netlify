@@ -1,0 +1,5 @@
+<nav aria-label="Breadcrumb">
+  {% if tags and "post" in tags %}
+    <a href="/{{ settings.posts | slugify }}/">&larr; back to posts</a>
+  {% endif %}
+</nav>

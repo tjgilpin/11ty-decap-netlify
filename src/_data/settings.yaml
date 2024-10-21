@@ -9,3 +9,5 @@ image: /static/img/496404201.jpg
 width: 1280
 height: 630
 alt: Screenshot of website at https://github.com/tjgilpin/11ty-decap-netlify
+posts: Articles
+postsorder: 100
