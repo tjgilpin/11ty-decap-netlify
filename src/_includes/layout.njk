@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - {{ settings.title }}</title>
     <meta name="description" content="{{ settings.description }}">
+    <meta name="generator" content="{{ eleventy.generator }}">    
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ settings.url }}">
     <meta property="og:site_name" content="{{ settings.name }}">
@@ -32,12 +33,6 @@
       </nav>
     </header>
     <main>
-
-      <nav aria-label="Breadcrumb">
-        {% if tags and "post" in tags %}
-          <a href="/{{ settings.posts | slugify }}/">&larr; back to posts</a>
-        {% endif %}
-      </nav>
       {% if title  %}
         <h1>
           {{ title }}
