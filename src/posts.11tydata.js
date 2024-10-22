@@ -1,4 +1,4 @@
-module.exports = function (data) {
+export default function(data) {
   return {
     layout: "layoutpostlist.njk",  // Set the default layout for all files in the "posts" directory
     eleventyComputed: {

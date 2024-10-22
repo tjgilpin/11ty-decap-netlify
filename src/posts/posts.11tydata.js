@@ -1,6 +1,6 @@
-module.exports = function (data) {
+export default function(data) {
   return {
-    layout: "layout.njk",  // Set the default layout for all files in the "posts" directory
+    layout: "layoutpost.njk",  // Set the default layout for all files in the "posts" directory
     tags: "post",
     eleventyComputed: {
       // Dynamically generate the permalink for all files in the "posts" directory

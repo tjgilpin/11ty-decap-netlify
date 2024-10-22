@@ -1,8 +1,8 @@
-const yaml = require("js-yaml");
-const { DateTime } = require("luxon");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+import yaml from "js-yaml";
+import { DateTime } from 'luxon';
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
-module.exports = function (eleventyConfig) {
+export default function(eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
