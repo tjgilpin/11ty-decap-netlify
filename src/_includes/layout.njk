@@ -23,7 +23,7 @@
   </head>
   <body class="{{ title | slugify }}">
     <header>
-      <a href="/"><img src="{{ settings.logo }}" /></a>
+      <a href="/"><img src="{{ settings.logo }}" alt="{{ settings.name }}" /></a>
       <nav aria-label="Main">
         <ul>
           {% for item in collections.all | eleventyNavigation %}
