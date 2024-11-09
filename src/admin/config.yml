@@ -21,11 +21,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Remove from Navigation", name: "eleventyExcludeFromCollections", widget: "boolean", default: false }
       - { label: "Navigation Order", name: "order", widget: "number", default: 0 }
-      - { label: "Show Blog Posts", name: "posts", widget: "boolean", default: false, required: false }
-  - label: "Blog Posts"
+  - label: "Posts"
     name: "blog"
     folder: "src/posts"
     create: true
@@ -43,6 +42,16 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+  - label: "Post Listing Page"
+    name: "posts"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "src/posts.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" } 
+          - { label: "Posts URL", name: "posts", widget: "string" }
+          - { label: "Navigation Order", name: "postsorder", widget: "number" }        
   - label: "Settings"
     name: "settings"
     editor:
@@ -61,9 +70,7 @@ collections:
           - { label: "Image", name: "image", widget: "image", allow_multiple: false }
           - { label: "Image width", name: "width", widget: "number", default: 1200 }          
           - { label: "Image height", name: "height", widget: "number", default: 630 }          
-          - { label: "Image alt", name: "alt", widget: "string" }  
-          - { label: "Posts URL", name: "posts", widget: "string" }
-          - { label: "Navigation Order", name: "postsorder", widget: "number" }
+          - { label: "Image alt", name: "alt", widget: "string" }
       - label: "Footer Links"
         name: "footerlinks"
         file: "src/_data/footerlinks.yaml"
