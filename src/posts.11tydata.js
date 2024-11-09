@@ -1,16 +1,16 @@
 export default function(data) {
   return {
-    layout: "layoutpostlist.njk",  // Set the default layout for all files in the "posts" directory
+    layout: "layoutpostlist.njk",  // Set the layout
     eleventyComputed: {
-      // Dynamically generate the permalink for all files in the "posts" directory
+      // Dynamically generate the permalink
       permalink: function(data) {
-        const postsDir = data.settings.posts;
+        const postsDir = data.posts.posts;
         // Use the 'title' from front matter
         return `/${this.slugify(postsDir)}/index.html`;
       },
       eleventyNavigation: {
-        key: data => data.settings.posts,
-        order: data => data.settings.postsorder
+        key: data => data.posts.posts,
+        order: data => data.posts.postsorder
       }
     }
   };
