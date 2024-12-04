@@ -1,3 +1,3 @@
 node_modules
 README.md
-admin/email/
+src/admin/emails/invitation.html
