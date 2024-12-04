@@ -37,6 +37,7 @@ export default function(eleventyConfig) {
 
   // Copy admin assets to /_Site
   eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
+  eleventyConfig.addPassthroughCopy("./src/admin/emails/invitation.html");
 
   // Copy static assets to /_site
   eleventyConfig.addPassthroughCopy("./src/static/");
